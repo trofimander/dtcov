@@ -87,7 +87,7 @@ class DjangoTemplateTracer(PyTracer):
         self.cur_django_file_data = None
 
     def _trace(self, frame, event, arg_unused):
-        super(DjangoTemplateTracer, self)._trace(frame, event, arg_unused)
+#        super(DjangoTemplateTracer, self)._trace(frame, event, arg_unused)
 
         try:
             if event == 'call' and is_django_render_call(frame):
