@@ -1,0 +1,4 @@
+build
+dist
+django_template_coverage.egg-info
+.coverage
