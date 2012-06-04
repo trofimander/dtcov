@@ -89,8 +89,10 @@ class DjangoTemplateCodeParser(CodeParser):
                 continue
 
             if token.token_type == TOKEN_BLOCK or token.token_type == TOKEN_VAR:
-                source_lines.add(token.lineno)
+                if token.token_type == TOKEN_BLOCK and token.contents.startswith('end'):
+                    continue
 
+                source_lines.add(token.lineno)
 
         return tuple(sorted(source_lines)), ()
 
