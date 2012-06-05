@@ -29,6 +29,8 @@ class coverage(coverage.coverage):
             return a
         except NotPython:
             try:
+                if isinstance(it, CodeUnit):
+                    it.name = it.filename
                 return DjangoTemplateAnalysis(self, it)
             except :
                 traceback.print_exc()
