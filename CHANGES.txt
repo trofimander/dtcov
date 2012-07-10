@@ -1,1 +1,3 @@
+v0.1.0, 10.07.2012 -- Uploaded to PyPI
+
 v0.1.0a, 04.05.2012 -- Initial release.

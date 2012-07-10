@@ -1,6 +1,6 @@
 # setup.py for Django template coverage.
 
-"""
+"""Coverage tool for Django templates
 Django Template Coverage version %(__version__)s
 Measures coverage of tags and expression in rendered Django templates.
 """
