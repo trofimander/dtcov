@@ -1,2 +1,2 @@
-__url__ = "url to coverage"
+__url__ = "https://github.com/traff/dtcov"
 __version__ = "0.1.0"
